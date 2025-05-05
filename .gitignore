@@ -1,0 +1,30 @@
+# Maven build
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+!**src/main/**/target/
+!**src/test/**/target/
+
+# Eclipse
+*.launch
+.settings/
+.project
+.classpath
+
+# IntelliJ
+.idea
+*.iml
+*.ipr
+*.iws
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+build/
+/dist/
+/nbdist/
+/.nb-gradle/
+!**src/main/**/build/
+!**src/test/**/build/
+
+# VS Code
+.vscode/
