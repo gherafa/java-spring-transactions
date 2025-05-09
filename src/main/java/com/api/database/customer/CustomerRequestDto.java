@@ -1,4 +1,4 @@
-package com.api.database.Model.entities;
+package com.api.database.customer;
 
 import org.modelmapper.ModelMapper;
 
@@ -11,15 +11,15 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class PersonRequestDto {
-    private Long Id;
+public class CustomerRequestDto {
+    private Long customerId;
     private String name;
-    private String description;
+    private Long accountNo;
     private Long balance;
 
-    public Person convertToPersonEntity() {
+    public Customer convertToCustomerEntity() {
         ModelMapper modelMapper = new ModelMapper();
 
-        return modelMapper.map(this, Person.class);
+        return modelMapper.map(this, Customer.class);
     }
 }

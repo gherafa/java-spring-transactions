@@ -1,4 +1,8 @@
-package com.api.database.Model.entities;
+package com.api.database.customer;
+
+import java.util.List;
+
+import com.api.database.transactions.Transaction;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,9 +13,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class PersonResponseDto {
-    private Long Id;
+public class CustomerResponseDto {
+    private Long customerId;
     private String name;
-    private String description;
+    private Long accountNo;
     private Long balance;
 }

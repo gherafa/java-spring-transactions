@@ -8,7 +8,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.api.database.Model.entities.Person;
+import com.api.database.customer.Customer;
 
 @SpringBootApplication
 public class DatabaseApplication {
@@ -18,7 +18,7 @@ public class DatabaseApplication {
 	}
 
 	@Bean
-	List<Person> wallets() {
+	List<Customer> wallets() {
 		return new ArrayList<>();
 	}
 
