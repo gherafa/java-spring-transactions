@@ -29,13 +29,9 @@ public class TransactionService {
         Transaction depositTransaction = Transaction.builder().customer(targetCustomer)
             .transactionType(transaction.getTransactionType()).amount(transaction.getAmount()).description("DEPOSIT").build();
 
-        // this.transactionRepository.save(withdrawalTransaction);
-
-        // return this.transactionRepository.save(depositTransaction);   
         withdrawalTransaction = transactionRepository.save(withdrawalTransaction);
         depositTransaction = transactionRepository.save(depositTransaction);
 
-        // Return both in a list
         return List.of(withdrawalTransaction, depositTransaction);
     }
 
