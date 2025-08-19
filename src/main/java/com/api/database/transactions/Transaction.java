@@ -39,13 +39,10 @@ public class Transaction {
     @Column(name = "transaction_id", nullable = false)
     private Long Id;
 
-    // @OneToOne(cascade = CascadeType.PERSIST)
-    // @EqualsAndHashCode.Exclude
     @ManyToOne
     @JoinColumn(name = "account_no", nullable = false)
     @EqualsAndHashCode.Exclude
     private Customer customer;
-    
     
     @Column(nullable = false)
     private String transactionType;
